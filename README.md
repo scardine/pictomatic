@@ -36,14 +36,21 @@ Result:
 Options/Defaults
 ----------------
 
-  * gliph: `<span>&#xF183;</span>`
-  * numGliphs: 10
+  * gliph: `&#xF183;`  
+    icon code. Unfortunatelly FontAwesome doesn't use the ligatures trick, so you have to inspect 
+    the CSS.
+  * numGliphs: 10  
+    number of icons in the bar.
   * fontSize: 0
-  * width: 'auto'
+    zero means "auto" (calculated using numGlips and width if possible, else the parents default)
+  * width: 'auto'  
+    numGlips * fontSize
   * bg1: 'rgba(207, 207, 207, 0.05)'
+  * fg1: 'rgb(207, 207, 207)'  
+    colors of the background icons (gray foreground, 5% opacity background)
   * bg2: 'rgba(240, 0, 0, 0.05)'
-  * fg1: 'rgb(207, 207, 207)'
-  * fg2: 'rgb(240, 0, 0)'
+  * fg2: 'rgb(240, 0, 0)'  
+    colors of the foreground icons (dark red foreground, 5% opacity background)
   
 Todo
 ----
