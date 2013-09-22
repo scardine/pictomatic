@@ -1,143 +1,101 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pict-o-matic : Small jQuery plugin to render pictographs using gliphs from your favorite pictogram webfont" />
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://raw.github.com/scardine/pictomatic/master/dist/css/pictomatic.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript" src="javascripts/pictomatic.js"></script>
-    
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Pict-o-matic by scardine</title>
+    <title>Pict-o-matic</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/scardine/pictomatic">View on GitHub</a>
-    <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Pict-o-matic</h1>
-            <h2>Small jQuery plugin to render pictographs</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/scardine/pictomatic">View on GitHub</a>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/scardine/pictomatic/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/scardine/pictomatic/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
+          <h1 id="project_title">Pict-o-matic</h1>
+          <h2 id="project_tagline">Small jQuery plugin to render pictographs using gliphs from your favorite pictogram webfont</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/scardine/pictomatic/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/scardine/pictomatic/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="pict-o-matic" class="anchor" href="#pict-o-matic"><span class="octicon octicon-link"></span></a>pict-o-matic</h1>
+
+<p>Small jQuery plugin to render pictographs using gliphs from your favorite pictogram webfont (default to FontAwesome).</p>
+
+<p>Probably should be done without jQuery, but javascript is not my poison (usually I drink Python). Fork 
+and send pull requests if you care.</p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>jQuery</li>
+<li>FontAwesome or similar</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>&lt;div&gt;
+    &lt;div id="chart" style="float:left"&gt;&lt;/div&gt;
+    &lt;div style="padding: 5px; margin-left: 650px;"&gt;
+        Population&lt;br&gt;
+        &lt;span style="font-size:32px;"&gt;85%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;br clear="both"&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript" src="js/pictomatic.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $('#chart').pictomatic(0.85, {width: 650});
+&lt;/script&gt;
+</code></pre>
+
+<p>Result:</p>
+
+<p><img src="/examples/chart.png" alt="example"></p>
+
+<h2>
+<a name="optionsdefaults" class="anchor" href="#optionsdefaults"><span class="octicon octicon-link"></span></a>Options/Defaults</h2>
+
+<ul>
+<li>gliph: <code>&lt;span&gt;&amp;#xF183;&lt;/span&gt;</code>
+</li>
+<li>numGliphs: 10</li>
+<li>fontSize: 0</li>
+<li>width: 'auto'</li>
+<li>bg1: 'rgba(207, 207, 207, 0.05)'</li>
+<li>bg2: 'rgba(240, 0, 0, 0.05)'</li>
+<li>fg1: 'rgb(207, 207, 207)'</li>
+<li>fg2: 'rgb(240, 0, 0)'</li>
+</ul><h2>
+<a name="caveats" class="anchor" href="#caveats"><span class="octicon octicon-link"></span></a>Caveats</h2>
+
+<p>Don't work in older browsers. I don't care for IE bellow 10, nobody should. Fork 
+and send pull requests if you please.</p>
       </section>
+    </div>
 
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-            <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Exampes:</h3>
-                <div>
-        <div id="chart1" style="float:left"></div>
-        <div>35%</div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart2" style="float:left"></div>
-        <div>70%</div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart3" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            Home<br>
-            <span style="font-size:32px;">55%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart4" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            RSS<br>
-            <span style="font-size:32px;">5%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart5" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            Shield<br>
-            <span style="font-size:32px;">15%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart6" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            Github<br>
-            <span style="font-size:32px;">45%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart7" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            Man<br>
-            <span style="font-size:32px;">85%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <div>
-        <div id="chart8" style="float:left"></div>
-        <div style="padding: 5px; margin-left: 350px;;">
-            Woman<br>
-            <span style="font-size:32px;">95%</span>
-        </div>
-        <br clear="both">
-    </div>
-    <script type="text/javascript">
-        $('#chart1').pictomatic(0.35, {gliph: '&#xF015', numGliphs: 25});
-        $('#chart2').pictomatic(0.70, {numGliphs: 25});
-        $('#chart3').pictomatic(0.55, {width: 350, gliph: '&#xF015'});
-        $('#chart4').pictomatic(0.05, {width: 350, gliph: '&#xF143'});
-        $('#chart5').pictomatic(0.15, {width: 350, gliph: '&#xF132'});
-        $('#chart6').pictomatic(0.45, {width: 350, gliph: '&#xF113'});
-        $('#chart7').pictomatic(0.85, {width: 350});
-        $('#chart8').pictomatic(0.95, {width: 350, gliph: '&#xF182'});
-    </script>
-
-
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/scardine">scardine</a> can be found on <a href="https://github.com/scardine/pictomatic">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pict-o-matic maintained by <a href="https://github.com/scardine">scardine</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
-
     </div>
 
     
+
   </body>
 </html>
