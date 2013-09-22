@@ -32,3 +32,21 @@ Result:
 
 ![example](/examples/chart.png)
     
+    
+Options
+-------
+
+  * gliph: "<span>&#xF183;</span>"
+  * numGliphs: 10
+  * fontSize: 0
+  * width: 'auto'
+  * bg1: 'rgba(207, 207, 207, 0.05)'
+  * bg2: 'rgba(240, 0, 0, 0.05)'
+  * fg1: 'rgb(207, 207, 207)'
+  * fg2: 'rgb(240, 0, 0)'
+  
+Caveats
+-------
+
+Don't work in older browsers. I don't care for IE bellow 10, nobody should. Fork 
+and send pull requests if you please.
