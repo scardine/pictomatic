@@ -45,13 +45,13 @@
 and send pull requests if you care.</p>
 
 <h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
-
-<ul>
-<li>jQuery</li>
-<li>FontAwesome or similar</li>
-</ul><h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>In order to render this chart:</p>
+
+<p><img src="https://raw.github.com/scardine/pictomatic/master/examples/chart.png" alt="example"></p>
+
+<p>Use something like this:</p>
 
 <pre><code>&lt;div&gt;
     &lt;div id="chart" style="float:left"&gt;&lt;/div&gt;
@@ -67,9 +67,13 @@ and send pull requests if you care.</p>
 &lt;/script&gt;
 </code></pre>
 
-<p>Result:</p>
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<p><img src="https://raw.github.com/scardine/pictomatic/master/examples/chart.png" alt="example"></p>
+<ul>
+<li>jQuery</li>
+<li>FontAwesome or similar</li>
+</ul>
 
 <h2>
 <a name="optionsdefaults" class="anchor" href="#optionsdefaults"><span class="octicon octicon-link"></span></a>Options/Defaults</h2>
@@ -84,8 +88,10 @@ and send pull requests if you care.</p>
 <li>bg2: 'rgba(240, 0, 0, 0.05)'</li>
 <li>fg1: 'rgb(207, 207, 207)'</li>
 <li>fg2: 'rgb(240, 0, 0)'</li>
-</ul><h2>
+</ul>
 
+
+<h2>
 <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
 
     <div id="chart1" style="float:left"></div>
@@ -156,7 +162,7 @@ and send pull requests if you care.</p>
         $('#chart8').pictomatic(0.95, {width: 350, gliph: '&#xF182'});
     </script>
 
-
+<h2>
 <a name="caveats" class="anchor" href="#caveats"><span class="octicon octicon-link"></span></a>Caveats</h2>
 
 <p>Don't work in older browsers. I don't care for IE bellow 10, nobody should. Fork 
