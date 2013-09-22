@@ -1,0 +1,40 @@
+.pictomatic {
+    font:1em FontAwesome;
+    letter-spacing:2px;
+    white-space:nowrap;
+    overflow: hidden;
+    position:relative;
+    font-weight:normal;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    text-decoration:none;
+}
+
+.pictomatic span {
+    display:inline-block;
+    text-align:center;
+}
+
+.pictomatic-background, .pictomatic-foreground, .pictomatic-sample {
+    width:auto;
+    height:auto;
+}
+
+.pictomatic-sample {
+    position:absolute;
+    top:0;
+    left:0;
+    letter-spacing:0;
+}
+
+.pictomatic-background {
+    float:left;
+}
+
+.pictomatic-foreground {
+    top:0;
+    left:0;
+    position:absolute;
+    overflow: hidden;
+    text-decoration:line-through;
+}
