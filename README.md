@@ -33,10 +33,10 @@ Result:
 ![example](/examples/chart.png)
     
     
-Options
--------
+Options/Defaults
+----------------
 
-  * gliph: "<span>&#xF183;</span>"
+  * gliph: `<span>&#xF183;</span>`
   * numGliphs: 10
   * fontSize: 0
   * width: 'auto'
