@@ -79,15 +79,22 @@ and send pull requests if you care.</p>
 <a name="optionsdefaults" class="anchor" href="#optionsdefaults"><span class="octicon octicon-link"></span></a>Options/Defaults</h2>
 
 <ul>
-<li>gliph: <code>&lt;span&gt;&amp;#xF183;&lt;/span&gt;</code>
+<li>gliph: <code>&amp;#xF183;</code><br>
+    Icon code. Unfortunatelly FontAwesome doesn't use the ligatures trick, so you have to inspect the CSS.
 </li>
-<li>numGliphs: 10</li>
-<li>fontSize: 0</li>
-<li>width: 'auto'</li>
-<li>bg1: 'rgba(207, 207, 207, 0.05)'</li>
-<li>bg2: 'rgba(240, 0, 0, 0.05)'</li>
-<li>fg1: 'rgb(207, 207, 207)'</li>
-<li>fg2: 'rgb(240, 0, 0)'</li>
+<li>numGliphs: 10 <br>
+    number of icons
+</li>
+<li>fontSize: 0 <br>
+    zero means "auto" (the size will be calculated based on numGliphs and width if possible, else use parents default)
+</li>
+<li>width: 'auto'<br>
+    using this option with fontSize is probably wrong
+</li>
+<li>bg1: 'rgba(207, 207, 207, 0.05)' <br>Background gliphs background color, gray with 5% opacity</li>
+<li>fg1: 'rgb(207, 207, 207)' <br>Background gliphs foreground color, gray</li>
+<li>bg2: 'rgba(240, 0, 0, 0.05)' <br>Foreground gliphs background color, dark red with 5% opacity</li>
+<li>fg2: 'rgb(240, 0, 0)' <br>Foreground gliphs foreground color, dark red</li>
 </ul>
 
 
