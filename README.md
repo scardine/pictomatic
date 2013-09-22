@@ -37,7 +37,7 @@ Options/Defaults
 ----------------
 
   * gliph: `&#xF183;`  
-    icon code. Unfortunatelly FontAwesome doesn't use the ligatures trick, so you have to inspect 
+    icon code. Unfortunately FontAwesome doesn't use the ligatures trick, so you have to inspect 
     the CSS.
   * numGliphs: 10  
     number of icons in the bar.
