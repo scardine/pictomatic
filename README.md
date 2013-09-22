@@ -3,6 +3,9 @@ pictomatic
 
 Small jQuery plugin to render pictographs using your favorite pictogram webfont (default to FontAwesome).
 
+Probably should be done without jQuery, but javascript is not my poison (usually I drink Python). Fork 
+and send pull requests if you care.
+
 Requirements
 ------------
 
@@ -25,5 +28,7 @@ Usage
         $('#chart').pictomatic(0.85, {width: 650});
     </script>
 
+Result:
 
+![example](/examples/chart.png)
     
