@@ -1,5 +1,5 @@
-pictomatic
-==========
+pict-o-matic
+============
 
 Small jQuery plugin to render pictographs using your favorite pictogram webfont (default to FontAwesome).
 
