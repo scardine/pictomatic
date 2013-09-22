@@ -45,6 +45,11 @@ Options/Defaults
   * fg1: 'rgb(207, 207, 207)'
   * fg2: 'rgb(240, 0, 0)'
   
+Todo
+----
+
+Throw in some annimations.
+
 Caveats
 -------
 
