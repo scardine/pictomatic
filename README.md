@@ -60,5 +60,6 @@ Include some animation.
 Caveats
 -------
 
-Don't work in older browsers. I don't care for IE bellow 10, nobody should. Fork 
-and send pull requests if you please.
+ * Probably doesn't work for older browsers. I don't care for IE bellow 10, fell fre to send pull 
+   requests if you care.
+ * English is not my native language, I may sound rude or iliterate.
