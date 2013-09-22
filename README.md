@@ -48,7 +48,7 @@ Options/Defaults
 Todo
 ----
 
-Throw in some annimations.
+Include some animation.
 
 Caveats
 -------
