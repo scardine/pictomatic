@@ -60,6 +60,6 @@ Include some animation.
 Caveats
 -------
 
- * Probably doesn't work for older browsers. I don't care for IE bellow 10, fell fre to send pull 
+ * Probably doesn't work for older browsers. I don't care for IE bellow 10, feel free to send pull 
    requests if you care.
  * English is not my native language, I may sound rude or iliterate.
